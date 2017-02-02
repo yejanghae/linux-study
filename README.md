@@ -1,1 +1,1 @@
-# linux-stury
+# linux-study
