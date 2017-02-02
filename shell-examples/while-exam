@@ -1,0 +1,12 @@
+#!/bin/sh
+
+printf "Enter password : "
+read trythis
+
+while [ $trythis != secret ]; do
+	echo "Sorry, try again"
+	printf "Enter password : "
+	read trythis
+done
+
+exit 0

@@ -1,0 +1,2 @@
+read salutation
+echo $salutation

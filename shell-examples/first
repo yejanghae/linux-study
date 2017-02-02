@@ -1,0 +1,11 @@
+#!/bin/sh
+# first
+# 이 파일은 현재 디렉터리의 파일들 중 POSIX라는 문자열을 담은 파일들을 찾고 파일 이름들을 표준 출력으로 출력한다.
+for file in *
+do
+	if grep -q POSIX $file
+	then
+		echo $file
+	fi
+done
+exit 0

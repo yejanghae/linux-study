@@ -1,0 +1,12 @@
+#!/bin/sh
+
+until who | grep $1 > /dev/null
+do
+	sleep 60
+done
+
+# 지정된 사용자가 로그인했음을 벨 소리와 함께 알려준다.
+echo -e '\a'
+echo "**** $1 has just logged in ****"
+
+exit 0

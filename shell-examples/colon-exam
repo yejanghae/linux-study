@@ -1,0 +1,10 @@
+#!/bin/sh
+
+rm -f fred
+if [ -f fred ]; then
+	:
+else
+	echo fil fred did not exist
+fi
+
+exit 0
